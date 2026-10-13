@@ -275,13 +275,19 @@ function subirChakra() {
 
 Si el ninja tiene 80 de chakra, el número cambia a 90 sin recargar la página. También usé `useState` para seleccionar personajes y mostrar u ocultar sus descripciones.
 
-### d) Enlace de mi repositorio de GitHub
 
-**Pendiente de agregar el enlace real al crear y subir el repositorio `t3_act4_react`.**
+## d) Enlace de mi repositorio de GitHub
 
-### e) Enlace de mi proyecto desplegado en GitHub Pages
+El código fuente de mi proyecto está disponible en:
 
-**Pendiente de agregar el enlace real después de publicar y comprobar la página.**
+https://github.com/miguelsandovalreyeskgll/t3_act4_react
+
+## e) Enlace de mi proyecto desplegado en GitHub Pages
+
+La aplicación Naruto: Baraja Ninja se encuentra publicada en:
+
+https://miguelsandovalreyeskgll.github.io/t3_act4_react/
+
 
 ---
 
