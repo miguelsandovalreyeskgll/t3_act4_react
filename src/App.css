@@ -1,0 +1,332 @@
+
+/* ESTILO GENERAL */
+:root {
+  font-family: "Inter", Arial, sans-serif;
+  color: #334155;
+  background-color: #fafaf8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #fafaf8;
+  color: #334155;
+}
+
+button {
+  font: inherit;
+}
+
+/* ENCABEZADO */
+.header {
+  background: #fff0e5;
+  color: #334155;
+  border-bottom: 1px solid #edd7c7;
+}
+
+.header-contenido {
+  padding: 26px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.header-contenido h1 {
+  color: #374151;
+  font-size: clamp(26px, 4vw, 36px);
+  font-weight: 800;
+  text-align: center;
+}
+
+.carta,
+.carta2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 42px;
+  padding: 5px;
+  color: #b65d38;
+  background: #ffffff;
+  border: 1px solid #e1ad92;
+  border-radius: 8px;
+}
+
+.header-contenido .descripcion {
+  width: 100%;
+  text-align: center;
+  color: #78695f;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* PANEL DEL PERSONAJE */
+.panel-destino {
+  width: 92%;
+  max-width: 1200px;
+  margin: 30px auto;
+  background: white;
+  color: #334155;
+  border: 1px solid #e5e1dc;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.035);
+}
+
+.panel-destino-contenido {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 250px;
+  align-items: center;
+  gap: 35px;
+}
+
+.panel-informacion {
+  min-width: 0;
+}
+
+.panel-etiqueta {
+  color: #8f6d59;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.panel-destino h2 {
+  color: #b65d38;
+  font-size: clamp(26px, 4vw, 34px);
+  margin-bottom: 10px;
+}
+
+.panel-tipo {
+  color: #475569;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.panel-rareza {
+  color: #9a7142;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.panel-descripcion {
+  color: #5b6472;
+  max-width: 650px;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.boton-descripcion {
+  padding: 9px 14px;
+  background: #fff5ed;
+  color: #9e5633;
+  border: 1px solid #eac9b3;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.boton-descripcion:hover {
+  background: #fce6d8;
+}
+
+/* CONTROLES DE CHAKRA */
+.panel-poder {
+  width: 100%;
+  min-width: 0;
+  padding: 20px;
+  text-align: center;
+  background: #f8fafc;
+  border: 1px solid #e5eaf0;
+  border-radius: 10px;
+}
+
+.panel-poder p {
+  color: #475569;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.panel-poder span {
+  display: block;
+  color: #b65d38;
+  font-size: 44px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  text-shadow: none;
+}
+
+.panel-botones {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.panel-botones button {
+  background: #b65d38;
+  color: white;
+  border: 1px solid #a65331;
+  border-radius: 7px;
+  padding: 11px 13px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.panel-botones button:hover {
+  background: #944b2d;
+  transform: none;
+}
+
+/* LISTA DE PERSONAJES */
+.contenedor-cartas-destino {
+  width: 92%;
+  max-width: 1200px;
+  margin: 35px auto 60px;
+}
+
+.titulo-seccion-destino {
+  color: #334155;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.lista-cartas-destino {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 20px;
+}
+
+/* CARTAS */
+.carta-destino {
+  width: 100%;
+  min-height: 280px;
+  text-align: left;
+  padding: 22px;
+  background: #ffffff;
+  color: #334155;
+  border: 1px solid #e5e1dc;
+  border-radius: 11px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.035);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.carta-destino:hover {
+  transform: none;
+  border-color: #d59e81;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.carta-destino-icono {
+  color: #b65d38;
+  font-size: 36px;
+  margin-bottom: 14px;
+}
+
+.carta-destino-info h2 {
+  color: #334155;
+  font-size: 21px;
+  margin-bottom: 9px;
+}
+
+.carta-destino-tipo {
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.carta-destino-datos {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.carta-destino-datos span {
+  display: inline-block;
+  padding: 6px 10px;
+  color: #995333;
+  background: #fff1e7;
+  border: 1px solid #f0d7c5;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.carta-destino-descripcion {
+  color: #5b6472;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* ACCESIBILIDAD */
+button:focus-visible {
+  outline: 3px solid #d89570;
+  outline-offset: 3px;
+}
+
+/* PIE DE PAGINA */
+footer {
+  background: #f3f1ee;
+  color: #64748b;
+  text-align: center;
+  padding: 25px 15px;
+  border-top: 1px solid #e5e1dc;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+/* DISPOSITIVOS MOVILES */
+@media (max-width: 760px) {
+  .panel-destino-contenido {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .panel-destino {
+    padding: 22px;
+  }
+
+  .panel-poder {
+    width: 100%;
+  }
+
+  .titulo-seccion-destino {
+    font-size: 25px;
+  }
+
+  .header-contenido {
+    padding: 22px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .panel-destino,
+  .contenedor-cartas-destino {
+    width: calc(100% - 24px);
+  }
+
+  .carta-destino {
+    min-height: auto;
+  }
+
+  .header-contenido h1 {
+    font-size: 25px;
+  }
+}

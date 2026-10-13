@@ -1,0 +1,100 @@
+
+
+.panel-destino {
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+  background: white;
+  color: black;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  padding: 25px;
+}
+
+.panel-destino-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.panel-etiqueta {
+  color: #000000;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.panel-destino h2 {
+  font-size: 32px;
+  margin-bottom: 8px;
+  color: rgb(255, 94, 0);
+}
+
+.panel-tipo {
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.panel-descripcion {
+  max-width: 650px;
+  line-height: 1.5;
+}
+
+.panel-poder {
+  min-width: 220px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.panel-poder p {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.panel-poder span {
+  display: block;
+  font-size: 48px;
+  font-weight: 800;
+  color: rgb(255, 94, 0);
+  margin-bottom: 15px;
+}
+
+.panel-botones {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.panel-botones button {
+  border: none;
+  background: rgb(255, 94, 0);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.panel-botones button:hover {
+  background: rgb(192, 70, 0);
+}
+
+@media (max-width: 600px) {
+  .panel-destino {
+    width: 92%;
+  }
+
+  .panel-destino h2 {
+    font-size: 25px;
+  }
+
+  .panel-poder {
+    width: 100%;
+  }
+}
