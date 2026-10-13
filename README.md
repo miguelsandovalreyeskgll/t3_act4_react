@@ -289,6 +289,3 @@ La aplicación Naruto: Baraja Ninja se encuentra publicada en:
 https://miguelsandovalreyeskgll.github.io/t3_act4_react/
 
 
----
-
-**Nota:** antes de entregar en Classroom, reemplazar las respuestas pendientes de los incisos **d)** y **e)** por los enlaces reales y verificar que ambos abran correctamente.
